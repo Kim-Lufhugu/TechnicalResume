@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Resume/CV Design</title>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<link rel="stylesheet" href="CSS/style.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".full_info_wrap .tabs ul li").click(function(){
+				$(".full_info_wrap .tabs ul li").removeClass("active");
+				$(this).addClass("active");
+
+				var datali = $(this).attr("data-li");
+
+				$(".full_info_item").hide();
+
+				if(datali == "experience"){
+					$(".experience").show();
+				}
+				else if(datali == "education"){
+					$(".education").show();
+				}
+				else if(datali == "contact"){
+					$(".contact").show();
+				}
+				else{
+					console.log("Loding...");
+				}
+			})
+		})
+	</script>
+</head>
+<body>
+	
+<div class="wrapper">
+   <div class="resume">
+      
+       <div class="profile_info">
+            <div class="profile_img">
+              <img src="/Images/kimmyness.jpg" alt="profile_img">
+            </div>
+            <div class="profile_data">
+                <p class="name">Ndirine Kim Lufhugu</p>
+                <span><i class="fas fa-map-marker-alt"></i> Gauteng, RSA</span>
+            </div>
+            <div class="view_more_btn">
+              <a href="#">View More</a>
+            </div>
+        </div>  
+      
+       <div class="skills">
+	       <div class="title">
+	          Skills
+	       </div>
+	       <ul>
+	         <li>
+	           <div class="skill_item html">
+	             <div class="icon"></div>
+	             <div class="text">HTML</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item css">
+	             <div class="icon"></div>
+	             <div class="text">CSS</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item js">
+	             <div class="icon"></div>
+	             <div class="text">Javascript</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item Java">
+	             <div class="icon"></div>
+	             <div class="text">Java</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item C#">
+	             <div class="icon"></div>
+	             <div class="text">C#</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item C++">
+	             <div class="icon"></div>
+	             <div class="text">C++</div>
+	           </div>
+	         </li>
+	       </ul>
+	    </div>
+     
+        <div class="full_info_wrap">
+            <div class="tabs">
+                <ul>
+                    <li data-li="experience" class="active">Experience</li>
+                    <li data-li="education">Education</li>
+                    <li data-li="contact">Contact</li>  
+                </ul>  
+            </div>  
+            
+            <div class="full_info">
+                <div class="full_info_item experience">
+                    <div class="title">WORK EXPERIENCE</div>
+
+                    <div class="info_wrap">
+                    	<ul>
+                    		<li>
+                    			<div class="sub_title">
+                    				Nov 2014 - Dec 2019
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										Glow Promotions- Promoter(Part-time)
+									</div>
+									<div class="data">
+								      Demonstrate and provide information on promoted products/services. Create a positive image and lead consumers to use it. Identify interest and understand customer needs and requirements.
+									</div>
+								</div>
+                    		</li>
+                    		<li>
+                    			<div class="sub_title">
+                    				Aug 2016 - Jan 2017
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										Webhelp SA- Customer Service
+									</div>
+									<div class="data">
+										Maintaining a positive,empathetic and professional attitude toward customers at all times.Responding promptly to customer inquiries. Communicating with customers through various channels. Acknowledging and resolving customer complaints.
+									</div>
+								</div>
+                    		</li>
+                    		<li>
+                                <div class="sub_title">
+                                    Feb 2016 - Jul 2016
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										Vodacom- Credit Controller
+									</div>
+									<div class="data">
+										There should be a close liason between the credit controller and the marketing/sales.Checking customer inquiries.Ensure that debts are paid in timely manner. Meet cash and debtor daily targets set by the firm. Provide accurate advice on billing queries.
+									</div>
+								</div>
+                    		</li>
+                    		<li>
+                    			<div class="sub_title">
+                    				 Mar 2014 - Sep 2014
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										VVM- Debt Collector
+									</div>
+									<div class="data">
+							          Checking customer's credit situation.Ensure that debts are paid in a timely manner.Ensure monthly processing deadlines are met as required.Send out monthly client statements/letters as may be agreed from time to.
+									</div>
+								</div>
+                    		</li>
+                    	</ul>
+                    </div>
+                </div>  
+                <div class="full_info_item education" style="display: none;">
+                  <div class="title">EDUCATION</div>
+
+                  <div class="info_wrap">
+                    	<ul>
+                    		<li>
+                    			<div class="sub_title">
+                    				Feb 2017 - Present
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										BSC Information Technology(North West University)
+									</div>
+									<div class="data">
+										I am majoring in programming but there are various modules that are intergrated within the course.
+									</div>
+								</div>
+                    		</li>
+                    		<li>
+                    			<div class="sub_title">
+                    				Jan 2008 - Nov 2013 	
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										Westridge High School
+									</div>
+									<div class="data">
+										Matric(Grade 12). Science Stream.
+									</div>
+								</div>
+                    		</li>
+                    	</ul>
+                    </div>
+                </div>  
+                <div class="full_info_item contact" style="display: none;">
+                  <div class="title">CONTACT</div>
+
+                  <div class="info_wrap">
+                  	<ul>
+                  		<li>
+                  			<span class="info_q">Email</span>
+                  			<span class="info_a">kimlufhugu@gmail.com</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">Website</span>
+                  			<span class="info_a">kimlufhugu@gmail.com</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">Phone</span>
+                  			<span class="info_a">0671139255</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">Linkedin</span>
+                  			<span class="info_a">linkedin.com/in/ndirine-kim-lufhugu-bba0941b1</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">Facebook</span>
+                  			<span class="info_a">facebook.com/ndirine-kim-lufhugu</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">Twitter</span>
+                  			<span class="info_a">twitter.com/kim</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">Instagram</span>
+                  			<span class="info_a">instagram.com/kim_luf</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">telegram</span>
+                  			<span class="info_a">telegram.com/kim-lufhugu</span>
+                  		</li>
+                  	</ul>
+                  </div>
+                </div>
+            </div> 
+        </div>
+     
+   </div>
+</div>
+
+</body>
+</html>
