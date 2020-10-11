@@ -99,14 +99,14 @@ body{
 }
 
 .skills ul li .skill_item .icon{
-  background: url("skills.png/skills.png") no-repeat -1px 0;
+  background: url("/skills.png/skills.png") no-repeat -1px 0;
   width: 20px;
   height: 22px;
   margin: 0 auto 5px;
 }
 
 .skills ul li .skill_item .icon{
-    background: url("skills.png/skills.png") no-repeat -1px 0;
+    background: url("/skills.png/skills.png") no-repeat -1px 0;
     width: 20px;
     height: 22px;
     margin: 0 auto 5px;
